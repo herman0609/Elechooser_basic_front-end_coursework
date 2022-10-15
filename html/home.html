@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ELEChooser/Home</title>
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
+	<script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+		integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<script src="../js/swiper.min.js"></script>
+</head>
+
+<body class="body1">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" id="navbar-toggle" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img alt="Brand" id="logo" src="../picture/logo.png"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="./home.html">Home <span class="sr-only">(current)</span></a></li>
+					<li><a href="./podcast.html">Podcast</a></li>
+					<li class="dropdown">
+						<a href="./smartphone.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+							aria-haspopup="true" aria-expanded="false">Others <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="./smartphone.html">Smart Phone</a></li>
+							<li><a href="./pad.html">Pad</a></li>
+							<li><a href="./laptop.html">Laptop</a></li>
+							<li><a href="./smartwatch.html">Smart Watch</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="./reference-list.html">References</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left" action="http://www.baidu.com/baidu" target="_blank">
+					<div class="form-group" id="navform">
+						<input type="text" class="form-control" placeholder="Search" name="word" size="30">
+					</div>
+					<button type="submit" id="navsubmit" class="btn btn-default">Baidu</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<div class="head-of-web">
+		<div class="logo"><img src="../picture/logo.png" alt="logo of ELEChooser"></div>
+		<div class="logo-description">
+			<h1>Your electronic device purchase assistant</h1>
+		</div>
+		
+		
+		<nav class="nav2">
+			<ul>
+				<li class="dropdown1"><a href="./home.html" class="nav-item">HOME</a></li>
+				<li class="dropdown1"><a href="./smartphone.html" id="dropdown" class="nav-item">SMART PHONE</a>
+					<div class="dropdown-content">
+						<a href="./smartphone.html">Phone Home</a>
+						<a href="./phone-for-students.html">For Students</a>
+						<a href="./phone-for-workers.html">For Professionals</a>
+					</div>
+				</li>
+				<li class="dropdown1"><a href="pad.html" class="nav-item">PAD</a>
+					<div class="dropdown-content">
+						<a href="./pad.html">Pad Home</a>
+						<a href="./ipad-2021.html">iPad 2021</a>
+						<a href="./google.html">Nest Hub</a>
+					</div>
+				</li>
+				<li class="dropdown1"><a href="./laptop.html" class="nav-item">LAPTOP</a></li>
+				<li class="dropdown1"><a href="./smartwatch.html" class="nav-item">SMART WATCH</a></li>
+				<li class="dropdown1"><a href="./podcast.html" class="nav-item">PODCAST</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="wrap">
+		<ul class="list">
+			<li class="item active">
+				<div class="wrap-box">
+					<h1 class="wrap-h1">Are you planning to purchase electronics?</h1>
+					<h3>This website can provide you with detailed suggestions.</h3>
+				</div>
+			</li>
+			<li class="item">
+				<div class="wrap-box">
+					<h1 class="wrap-h1">Every relaxing afternoon you spend with it.</h1>
+				</div>
+			</li>
+			<li class="item">
+				<div class="wrap-box">
+					<h1 class="wrap-h1">Every brave adventure you undertake with it.</h1>
+				</div>
+			</li>
+			<li class="item">
+				<div class="wrap-box">
+					<h1 class="wrap-h1">Every busy workday you have with it.</h1>
+				</div>
+			</li>
+			<li class="item">
+				<div class="wrap-box">
+					<h1 class="wrap-h1">Every pleasant song you hear with it.</h1>
+				</div>
+			</li>
+
+		</ul>
+		<ul class="pointList">
+			<li class="point active" data-index="0"></li>
+			<li class="point" data-index="1"></li>
+			<li class="point" data-index="2"></li>
+			<li class="point" data-index="3"></li>
+			<li class="point" data-index="4"></li>
+		</ul>
+		<button type="button" class="btn" id="goPre"><span class="glyphicon glyphicon-menu-left"
+				aria-hidden="true"></span></button>
+		<button type="button" class="btn" id="goNext"><span class="glyphicon glyphicon-menu-right"
+				aria-hidden="true"></span></button>
+	</div>
+
+	<div id="picwall">
+		<div id="middle">
+			<div id="middle-our">Welcome To Choose</div>
+			<div id="middle-ll">PICTURE WALL</div>
+		</div>
+		<div id="picwall2">
+			<div class="picwall-box col-sm-6 col-md-6 col-xs-12 col-lg-4" id="picwall-box">
+				<img src="../picture/xps.jpg" />
+				<div class="picwall-text">
+					<div class="picwall-blank"></div>
+					<div class="picwall-h3">
+						<h3>XPS Book</h3>
+						<p class="picwall-details">
+							You create the passion, we provide the technology. Create even better work with award-winning XPS laptops
+							and 2-in-1s.
+						</p>
+					</div>
+					<div class="picwall-price">
+						<div>$ 799</div>
+					</div>
+				</div>
+			</div>
+			<div class="picwall-box col-sm-6 col-md-6 col-xs-12 col-lg-4" id="picwall-box">
+				<img src="../picture/bigxps.jpg" />
+				<div class="picwall-text">
+					<div class="picwall-blank">
+					</div>
+					<div class="picwall-h3">
+						<h3>Dell</h3>
+						<p class="picwall-details">
+							With a long battery life and a lightweight form factor, it's easy to take your device on the go and help
+							you stay connected wherever you go.
+						</p>
+					</div>
+					<div class="picwall-price">
+						<div>$ 699</div>
+					</div>
+				</div>
+			</div>
+			<div class="picwall-box col-sm-6 col-md-6 col-xs-12 col-lg-4" id="picwall-box">
+				<img src="../picture/surfacebook.jpg" />
+				<div class="picwall-text">
+					<div class="picwall-blank">
+					</div>
+					<div class="picwall-h3">
+						<h3>Surface</h3>
+						<p class="picwall-details">
+							Surface Pro 8 combines the performance of a laptop with the flexibility of a tablet, and switches between
+							the two at will with larger 13-inch touchscreen.
+						</p>
+					</div>
+					<div class="picwall-price">
+						<div>$ 899</div>
+					</div>
+				</div>
+			</div>
+			<div class="picwall-box col-sm-6 col-md-6 col-xs-12" id="picwall-box">
+				<img src="../picture/edge.jpg" />
+				<div class="picwall-text">
+					<div class="picwall-blank">
+					</div>
+					<div class="picwall-h3">
+						<h3>Edge</h3>
+						<p class="picwall-details">
+							Microsoft Edge is the ideal browser for Windows. Sync your passwords, favorites and settings across
+							multiple devices with the Microsoft Edge browser.
+						</p>
+					</div>
+					<div class="picwall-price">
+						<div>Free</div>
+					</div>
+				</div>
+			</div>
+			<div class="picwall-box col-sm-6 col-md-6 col-xs-12" id="picwall-box">
+				<img src="../picture/newmac.jpg" />
+				<div class="picwall-text">
+					<div class="picwall-blank">
+					</div>
+					<div class="picwall-h3">
+						<h3>Macbook</h3>
+						<p class="picwall-details">
+							The most powerful MacBook Pro ever is here. With the blazing-fast M1 Pro or M1 Max chip — the first Apple
+							silicon designed for pros.
+						</p>
+					</div>
+					<div class="picwall-price">
+						<div>$ 1999</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" id="photos-3">
+		<a id="photo-31" href="podcast.html"><img src="../picture/applecar.jpg" alt="a photo of applecar">
+			<div>Beaking News: Apple Car!</div>
+		</a>
+		<a id="photo-32" href="podcast.html"><img src="../picture/microsoft.jpg" alt="a photo of news">
+			<div>Microsoft: Good Job!</div>
+		</a>
+		<a id="photo-33" href="podcast.html"><img src="../picture/jutou.png" alt="a photo of news">
+			<div>What about FANNG?</div>
+		</a>
+	</div>
+
+	<div class="phone-section">
+		<h2>POPULAR PRODUCTS</h2>
+		<div class="row">
+			<div class="col-sm-12 col-md-4">
+				<div class="thumbnail">
+					<div id="demo" class="dong">
+						<img id="testimg" src="../picture/huawei.jpg" alt="huawei phones">
+					</div>
+					<div class="caption">
+						<h3>Huawei P Series</h3>
+						<p>Huawei P series is the high-end flagship of Huawei's terminal products, which is positioned at the
+							forefront of fashion. Since birth, it has written the photo gene into DNA. Huawei has deployed its
+							products and services in more than 170 countries and areas. It overtook Ericsson in 2012 as the largest
+							telecommunications equipment manufacturer in the world, and overtook Apple in 2018 as the second-largest
+							manufacturer of smartphones in the world.</p>
+						<p><a href="./smartphone.html" class="btn btn-primary" role="button">Learn More</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<div class="thumbnail">
+					<div id="demo" class="dong">
+						<img id="testimg0" src="../picture/iphone.png" alt="iphone">
+					</div>
+					<div class="caption">
+						<h3>iPhone</h3>
+						<p>The Galaxy S series is a line of high-end smartphones that has co-existed with the Galaxy Note line as
+							being Samsung's flagship smartphones. The latest models are the Samsung Galaxy S21, S21+, and S21 Ultra,
+							released in January 2021. Together with the Samsung Galaxy Note, the lineup serves as Samsung's flagship
+							smartphone model. The series consisted initially of smartphones and the first device, the Samsung Galaxy
+							S, was announced in 2010.</p>
+						<p><a href="./smartphone.html" class="btn btn-primary" role="button">Learn More</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<div class="thumbnail">
+					<div id="demo" class="dong">
+						<img id="testimg1" src="../picture/samsung.jpg" alt="sumsang phones">
+					</div>
+					<div class="caption">
+						<h3>Samsung Galaxy S</h3>
+						<p>Huawei P series is the high-end flagship of Huawei's terminal products, which is positioned at the
+							forefront of fashion. Since birth, it has written the photo gene into DNA. Huawei has deployed its
+							products and services in more than 170 countries and areas. It overtook Ericsson in 2012 as the largest
+							telecommunications equipment manufacturer in the world, and overtook Apple in 2018 as the second-largest
+							manufacturer of smartphones in the world.</p>
+						<p><a href="./smartphone.html" class="btn btn-primary" role="button">Learn More</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="other-information">
+		<div class="other-information-topic">
+			<h1>OTHER ELECTRONIC DEVICES</h1>
+			<h5>Alongside detailed <a href="./smartphone.html">information</a> on smart phones, we also offer advice on
+				purchasing some other types of electronics.</h5>
+		</div>
+
+		<div class="other-information-content container">
+			<div class="box col-xs-12">
+				<div class="img dong">
+					<img src="../picture/pad.jpg" alt="a laptop">
+				</div>
+				<div class="text">
+					<h3>Pad</h3>
+					<p>
+						The form of the tablet was conceptualized in the middle of the 20th century and prototyped and developed in
+						the last two decades of that century.</p>
+					<p> In 2010, Apple released the iPad, the first mass-market tablet to achieve widespread popularity.
+					</p>
+					<a href="./pad.html" class="button">Learn more</a>
+				</div>
+			</div>
+			<div class="box col-xs-12">
+				<div class="img dong">
+					<img src="../picture/laptop.jpg" alt="a laptop">
+				</div>
+				<div class="text">
+					<h3>Laptop</h3>
+					<p>
+						A laptop, laptop computer, or notebook computer is a small, portable personal computer (PC) with a screen
+						and alphanumeric keyboard. These typically have a clamshell form factor, typically having the screen mounted
+						on the inside of the upper lid and the keyboard on the inside of the lower lid.
+					</p>
+					<a href="./laptop.html" class="button">Learn more</a>
+				</div>
+			</div>
+			<div class="box col-xs-12">
+				<div class="img dong">
+					<img src="../picture/smartwatch.png" alt="a smart watch">
+				</div>
+				<div class="text">
+					<h3>Smart Watch</h3>
+					<p>
+						Smartwatches have more general functionality closer to smartphones, including mobile apps, a mobile
+						operating system and WiFi/Bluetooth connectivity. Some smartwatches function as portable media players, with
+						FM radio and playback of digital audio and video files via a Bluetooth headset.
+					</p>
+					<a href="./smartwatch.html" class="button">Learn more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="Tz_box">
+		<h1>Want To Buy Now?</h1>
+		<h2>Now It is</h2>
+		<!--Tz_List start-->
+		<ul id="Tz_List">
+			<li><img src="../picture/0.png" alt="0" /><img src="../picture/0.png" /></li>
+			<li><img src="../picture/0.png" alt="0" /><img src="../picture/0.png" /></li>
+			<li><img src="../picture/d.png" alt=":" /></li>
+			<li><img src="../picture/0.png" /><img src="../picture/0.png" /></li>
+			<li><img src="../picture/0.png" /><img src="../picture/0.png" /></li>
+			<li><img src="../picture/d.png" /></li>
+			<li><img src="../picture/0.png" /><img src="../picture/0.png" /></li>
+			<li><img src="../picture/0.png" /><img src="../picture/0.png" /></li>
+		</ul>
+		<!--Tz_List end-->
+		<h3>Please check if you can catch the subway!</h3>
+	</div>
+	
+	<script src="../js/Move.js"></script>
+	<script src="../js/demo.js"></script>
+
+	<div id="amap">
+		<div id="word">
+			<h1>This is the navigation to the offline electronics store</h1>
+			<h4>Taikoo li, a place name, is located in the heart of chengdu and is an open block development center jointly
+				developed by SwireProperties and sino-oceanland.
+				Taikoo Li is adjacent to Dacisi Road in the north, Shamao Street in the west, east Street in the south, and
+				directly connected with chunxi Road intersection station of Chengdu Metro Line 2 and line 3.</h4>
+		</div>
+		<div id="allmap"></div>
+	</div>
+
+
+	<footer class="footer">
+		<div class="myinformation">
+			<h1>ELEChooser</h1>
+			<h5>Hang Sun</h5>
+			<h5>SWJTU / UoL</h5>
+			<a href="./reference-list.html">Reference List</a>
+		</div>
+		<div class="contactme">
+			<h4>contact me</h4>
+			<h4>el20hs@leeds.ac.uk</h4>
+		</div>
+	</footer>
+
+	<div class="container-fluid" id="accept">
+		<div id="weuse">
+			<div>Running this website requires the use of Baidu Map and other companies' public API interface, please confirm
+				whether you accept</div>
+		</div>
+		<div id="cookies"><a href="https://lbsyun.baidu.com/" target="_blank">SEE MORE</a></div>
+		<div id="insidea">
+			<div id="insideaccept">ACCEPT</div>
+		</div>
+	</div>
+
+	<div class="up" id="up">
+		<div class="to_top"></div>
+	</div>
+	<script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=FOZhef4cFSZ6yah5OAzhHZFb46ONaEzt&services=&t=20211124213927"></script>
+	<script type="text/javascript" src="../js/javascript.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded',function(){
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(116.331398,39.897445);
+    map.centerAndZoom(point,12);
+
+	map.enableScrollWheelZoom(true);
+	map.addControl(new BMap.NavigationControl());    
+	map.addControl(new BMap.ScaleControl());    
+	map.addControl(new BMap.OverviewMapControl());    
+	map.addControl(new BMap.MapTypeControl());    
+	map.setCurrentCity("成都");
+    var geolocation = new BMap.Geolocation();
+    geolocation.getCurrentPosition(function(r){
+        if(this.getStatus() == BMAP_STATUS_SUCCESS){
+            var mk = new BMap.Marker(r.point);
+            map.addOverlay(mk);
+            map.panTo(r.point);
+        }
+        else {
+            alert('failed'+this.getStatus());
+        }
+		var p1 = new BMap.Point(r.point.lng,r.point.lat);
+		var p2 = new BMap.Point(104.090463,30.658124);
+		
+		var driving = new BMap.DrivingRoute(map, {renderOptions:{map: map, autoViewport: true}});
+		driving.search(p1, p2);
+    },{enableHighAccuracy: true})
+	})
+	</script>
+</body>
+
+</html>

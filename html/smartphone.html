@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ELEChooser/Home</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <script src="../js/swiper.min.js"></script>
+</head>
+
+<body class="body1">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" id="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img alt="Brand" id="logo" src="../picture/logo.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="./home.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="./podcast.html">Podcast</a></li>
+                    <li class="dropdown">
+                        <a href="./smartphone.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">Others <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./smartphone.html">Smart Phone</a></li>
+                            <li><a href="./pad.html">Pad</a></li>
+                            <li><a href="./laptop.html">Laptop</a></li>
+                            <li><a href="./smartwatch.html">Smart Watch</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="./reference-list.html">References</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" action="http://www.baidu.com/baidu" target="_blank">
+                    <div class="form-group" id="navform">
+                        <input type="text" class="form-control" placeholder="Search" name="word" size="30">
+                    </div>
+                    <button type="submit" id="navsubmit" class="btn btn-default">Baidu</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="head-of-web">
+        <div class="logo"><img src="../picture/logo.png" alt="logo of ELEChooser"></div>
+        <div class="logo-description">
+            <h1>Your electronic device purchase assistant</h1>
+        </div>
+        <nav class="nav2">
+            <ul>
+                <li class="dropdown1"><a href="./home.html" class="nav-item">HOME</a></li>
+                <li class="dropdown1"><a href="./smartphone.html" id="dropdown" class="nav-item">SMART PHONE</a>
+                    <div class="dropdown-content">
+                        <a href="./smartphone.html">Phone Home</a>
+                        <a href="./phone-for-students.html">For Students</a>
+                        <a href="./phone-for-workers.html">For Professionals</a>
+                    </div>
+                </li>
+                <li class="dropdown1"><a href="pad.html" class="nav-item">PAD</a>
+                    <div class="dropdown-content">
+                        <a href="./pad.html">Pad Home</a>
+                        <a href="./ipad-2021.html">iPad 2021</a>
+                        <a href="./google.html">Nest Hub</a>
+                    </div>
+                </li>
+                <li class="dropdown1"><a href="./laptop.html" class="nav-item">LAPTOP</a></li>
+                <li class="dropdown1"><a href="./smartwatch.html" class="nav-item">SMART WATCH</a></li>
+                <li class="dropdown1"><a href="./podcast.html" class="nav-item">PODCAST</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="imgs"></div>
+    <script>
+        function scroll(to, time) {
+            $("#imgs").find("ul").stop().animate({ left: to + "px" }, time)
+        }
+        $(function () {
+            const imgList = ['../picture/baidi.png', '../picture/baidi1.jpg', '../picture/samsung.png', '../picture/baidi2.jpg', '../picture/13p.png', '../picture/baidi6.jpg', '../picture/baidi4.jpg', '../picture/baidi5.jpg',]
+            const speed = 1200
+            let div = document.getElementById("imgs")
+            let ul = document.createElement("ul")
+            ul.style.left = div.offsetWidth + "px"
+            ul.style.width = 260 * imgList.length + "px"
+            div.appendChild(ul)
+            let toLeft = div.offsetWidth - 260 * imgList.length
+            for (i in imgList) {
+                imgPath = imgList[i]
+                let li = document.createElement("li")
+                let img = document.createElement("img")
+                img.src = imgPath
+                li.appendChild(img)
+                ul.appendChild(li)
+            }
+            let time = speed * imgList.length
+            let time1 = parseInt((20 - toLeft) / 260 * speed)
+            scroll(toLeft, time)
+            setTimeout("scroll(20, " + time1 + ")", time)
+            setTimeout("scroll(" + toLeft + ", " + time1 + ")", time + time1)
+            setTimeout("setInterval('scroll(" + 20 + ", " + time1 + ");', " + time1 * 2 + ")", time)
+            setTimeout("setInterval('scroll(" + toLeft + ", " + time1 + ");', " + time1 * 2 + ")", time + time1)
+        });
+    </script>
+
+    <div class="phone-home-specification">
+        <h1>PLEASE CHOOSE THE CATEGORY YOU ARE IN</h1>
+        <p>We have recommended a number of smart phones based on your demographic.</p>
+    </div>
+
+    <div class="choose">
+        <div class="stu">
+            <a href="phone-for-students.html"><img src="../picture/student-home.png" alt="for students"></a>
+        </div>
+
+        <div class="pro">
+            <a href="phone-for-workers.html"><img src="../picture/professional-home.png" alt="for professionals"></a>
+        </div>
+    </div>
+    <div class="up" id="up">
+        <div class="to_top"></div>
+    </div>
+
+    <footer class="phone-footer">
+        <div class="myinformation">
+            <h1>ELEChooser</h1>
+            <h5>Hang Sun</h5>
+            <h5>SWJTU / UoL</h5>
+            <a href="./reference-list.html">Reference List</a>
+        </div>
+        <div class="contactme">
+            <h4>contact me</h4>
+            <h4>el20hs@leeds.ac.uk</h4>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="../js/javascript.js"></script>
+
+</body>
+
+</html>
